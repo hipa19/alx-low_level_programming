@@ -1,5 +1,8 @@
 #include "main.h"
-
+/**
+ * print_alphabet - prints lowercase alphabet
+ * Return: 0
+ */
 
 	/**
 	 * _isalpha - checks for alphabetic character
