@@ -1,12 +1,29 @@
-#include "main.h"
+# include "main.h"
+/**
+ * print_sign - print and if n is greater than zero
+ * 0 if n is zero and - if n is less
+ * than zero
+ *
+ * @n: takes integer type input for function
+ *
+ * Return: 1 if and, 0if 0 and -1 if -
+ */
 
-
-	/**
-	 * _isalpha - checks for alphabetic character
-	 * @c: the character to be checked
-	 * Return: 1 if c is a letter, 0 otherwise
-	 */
-	int _isalpha(int c)
+int print_sign(int n)
+{
+	if (n > 0)
 	{
-		return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
+		_putchar(43);
+		return (1);
 	}
+	else if (n == 0)
+	{
+		_putchar(48);
+		return (0);
+	}
+	else
+	{
+		_putchar(45);
+		return (-1);
+	}
+}
