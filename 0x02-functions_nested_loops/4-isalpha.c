@@ -4,8 +4,6 @@
 	/**
 	 * _isalpha - checks for alphabetic character
 	 * @c: the character to be checked
-	 * Discription: reproduces the absolut value of number
-	 *
 	 * Return: 1 if c is a letter, 0 otherwise
 	 */
 	int _isalpha(int c)
