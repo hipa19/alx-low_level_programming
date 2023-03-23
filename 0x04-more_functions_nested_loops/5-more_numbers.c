@@ -1,16 +1,22 @@
 #include "main.h"
 
 /**
- * print_line - print the character "_" n times to draw a line
- * @n: number of characters to draw
+ * more_numbers - print 0 to 14 ten times
  */
 
-void print_line(int n)
+void more_numbers(void)
 {
-	int times = n;
+	char i;
+	int counter;
 
-	for (times = n; times > 0; times--)
-		_putchar('_');
-
-	_putchar('\n');
+	for (counter = 1; counter <= 10; counter++)
+	{
+		for (i = 0; i <= 14; i++)
+		{
+			if (i / 10 > 0)
+				_putchar((i / 10) + '0');
+			_putchar((i % 10) + '0');
+		}
+		_putchar('\n');
+	}
 }
